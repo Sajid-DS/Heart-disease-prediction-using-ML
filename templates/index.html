@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;
+      text-align: center;
+      padding: 10px;
+      font-size:30x;
+      
+     }
+
+
+ #age{
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            padding: 0px;
+            text-align: center;
+        }
+        
+        #sex {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            padding: 0px;
+            text-align: center;
+        }
+        
+        #cp {
+             padding: 0px;
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #trestbps {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+             padding: 0px;
+        }
+
+
+ #chol {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+             padding: 0px;
+        }
+        
+        #fbs {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #restecg {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #thalach {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+          padding: 0px;
+         text-align: center;
+        }
+
+ #exang {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+           padding: 0px;
+        }
+        
+        #oldpeak {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            padding: 0px; 
+           text-align: center;
+        }
+        
+        #slope {
+            border-radius: 14px;
+            height: 25px;
+             padding: 0px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #ca {
+            border-radius: 14px;
+            height: 25px;
+            padding: 0px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+ #thal {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+        }
+
+ #submit {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+</style>
+</head>
+<body>
+<h3 style="font-size":20x;> Heart Disease Prediction</h3>
+<div>
+<form action="/result" method="POST">
+<label for="age">Enter Age</label>
+<input type="text" id="age" name="age">
+<br>
+<label for="sex">Enter 0 for Male & Enter 1 for Female</label>
+<input type="text" id="sex" name="sex">
+<br>
+
+<label for="cp">Enter Chest Pain</label>
+<input type="text" id="cp" name="cp">
+<br>
+<label for="trestbps">TrestBPS</label>
+<input type="text" id="trestbps" name="trestbps">
+<br>
+<label for="chol">Chol</label>
+<input type="text" id="chol" name="chol">
+<br>
+<label for="fbs">FBS</label>
+<input type="text" id="fbs" name="fbs">
+<br>
+<label for="restecg">Rest ECG</label>
+<input type="text" id="restecg" name="restecg">
+<br>
+<label for="thalach">Enter Thalach</label>
+<input type="text" id="thalach" name="thalach">
+<br>
+<label for="exang">Enter Exang</label>
+<input type="text" id="exang" name="exang">
+<br>
+<label for="oldpeak">Enter Oldpeak</label>
+<input type="text" id="oldpeak" name="oldpeak">
+<br>
+<label for="slope">Enter Slope</label>
+<input type="text" id="slope" name="slope">
+<br>
+<label for="ca">Enter CA</label>
+<input type="text" id="ca" name="ca">
+<br>
+<label for="thal">Enter Thal</label>
+<input type="text" id="thal" name="thal"></input>
+<br>
+
+<input id="submit" type="submit" value="Submit">
+<br>
+{{ prediction }}
+
+</form>
+</div>
+</body>
+</html>
